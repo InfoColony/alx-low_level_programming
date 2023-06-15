@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-\**
+/**
  *The main function outputs strings to the terminal/console
  */
 
