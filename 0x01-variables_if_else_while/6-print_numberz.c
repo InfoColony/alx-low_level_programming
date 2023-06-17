@@ -10,7 +10,7 @@ int main(void)
 	int cnt = 0;
 
 	for (; cnt < 10; cnt++)
-		printf("%d", cnt);
-	printf("\n");
+		putchar('0' + cnt);
+	putchar('\n');
 	return (0);
 }
