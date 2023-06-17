@@ -9,6 +9,7 @@ int main(void)
 {
 	char a = 'a';
 	int cnt = 0;
+	char n = '\n';
 
 	do {
 		if (cnt < 10)
@@ -22,6 +23,6 @@ int main(void)
 			a++;
 		}
 	} while (cnt < 10 || a <= 'f');
-	putchar(LF);
+	putchar(n);
 	return (0);
 }
