@@ -13,9 +13,14 @@ int main(void)
 
 	do {
 		if (a <= 'z')
+		{
 			putchar(a);
-		else
+			a++;
+		} else
+		{
 			putchar(A);
+			A++;
+		}
 
 	} while (a < 'z' || A <= 'Z');
 	putchar(n);
