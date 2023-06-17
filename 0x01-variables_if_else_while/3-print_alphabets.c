@@ -19,4 +19,5 @@ int main(void)
 
 	} while (a < 'z' || A <= 'A');
 	putchar(n);
+	return (0);
 }
