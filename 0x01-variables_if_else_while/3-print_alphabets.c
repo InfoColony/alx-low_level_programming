@@ -17,7 +17,7 @@ int main(void)
 		else
 			putchar(A);
 
-	} while (a < 'z' || A <= 'A');
+	} while (a < 'z' || A <= 'Z');
 	putchar(n);
 	return (0);
 }
