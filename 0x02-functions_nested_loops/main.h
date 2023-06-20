@@ -3,7 +3,7 @@
 
 void print_alphabet(void);
 
-void print_alphabet()
+/*void print_alphabet()
 {
 	char a = 'a';
 	char n = '\n';
@@ -14,4 +14,4 @@ void print_alphabet()
 	}
 	write(1,&n,1);
 	return;
-}
+}*/
