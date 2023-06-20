@@ -2,6 +2,4 @@
 #include <string.h>
 
 
-/*int _putchar();
-
- */
+int _putchar();
