@@ -8,6 +8,9 @@
 
 int main(void)
 {
-	_putchar("_putchar");
+	char word[] = "_putchar";
+	int wlen = strlen(word);
+	
+	write(1, word, wlen);
 	return (0);
 }
