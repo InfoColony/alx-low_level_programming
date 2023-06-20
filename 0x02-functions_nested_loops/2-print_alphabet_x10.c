@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 
 	int i = 0;
 
-	char = '\n';
+	char n = '\n';
 
 	for (; i < 10; i++)
 	{
@@ -22,6 +22,6 @@ void print_alphabet_x10(void)
 		{
 			write(1, &a, 1);
 		}
-		write('\n');
+		write(1, &n, 1);
 	}
 }
