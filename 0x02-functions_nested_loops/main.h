@@ -1,4 +1,7 @@
 #include <unistd.h>
-#include "_putchar.h"
+
+
+
+int _putchar(char n);
 
 int _islower(int c);
