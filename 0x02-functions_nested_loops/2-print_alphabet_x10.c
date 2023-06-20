@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.h"
 
 /**
  * print_alphabet_x10 - main function
@@ -12,14 +11,17 @@
 void print_alphabet_x10(void)
 {
 	char a = 'a';
+
 	int i = 0;
+
+	char = '\n';
 
 	for (; i < 10; i++)
 	{
 		for (; a <= 'z'; a++)
 		{
-			_putchar(a);
+			write(1, &a, 1);
 		}
-		_putchar('\n');
+		write('\n');
 	}
 }
