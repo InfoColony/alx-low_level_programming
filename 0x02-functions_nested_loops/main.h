@@ -2,4 +2,15 @@
 #include <string.h>
 
 
-void _putchar(char word[]);
+int _putchar();
+
+
+
+
+int _putchar()
+{
+	char word[] = "_putchar";
+	int wlen = strlen(word);
+	write(1,word,wlen);
+	return (0);
+}
