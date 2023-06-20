@@ -2,4 +2,4 @@
 #include <string.h>
 
 
-int _putchar(void);
+int _putchar(char word[]);
