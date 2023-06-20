@@ -6,15 +6,14 @@
  *Return: void (Success)
  */
 
-void print_alphabet()                                                                                                                              
-{                                                                                                                                                   
-    char a = 'a';                                                                                                                                   
-    char n = '\n';                                                                                                                                   
-                                                                                                                                                    
-    for (; a <= 'z'; a++)                                                                                                                           
-    {                                                                                                                                               
-        write(1,&a,1);                                                                                                                              
-    }                                                                                                                                               
-    write(1,&n,1);                                                                                                                                  
-    return;                                                                                                                                        
+void print_alphabet(void)
+{
+	char a = 'a';
+	char n = '\n';
+
+	for (; a <= 'z'; a++)
+	{
+		write(1, &a, 1);
+	}
+	write(1, &n, 1);
 }
