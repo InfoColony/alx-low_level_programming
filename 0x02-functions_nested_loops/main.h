@@ -1,5 +1,4 @@
-#include <unistd.h>
-#include <string.h>
+#include "_putchar.h"
 
 
 void print_alphabet(void);
@@ -10,8 +9,8 @@ void print_alphabet()
 
 	for (; a <= 'z'; a++)
 	{
-		putchar(a);
+		_putchar(a);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return;
 }
