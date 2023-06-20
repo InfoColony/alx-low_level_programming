@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	/** the variable for c */
 	if (c > 90)
-		return (true);
+		return (1);
 	else
-		return (false);
+		return (0);
 }
