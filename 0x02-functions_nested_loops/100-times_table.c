@@ -33,10 +33,7 @@ void print_times_table(int n)
 			for (; i <= n; i++)
 			{
 				j = 0;
-				for (; j <= n; j++)
-				{
-					factored_code(n, i, j, k);
-				}
+				factored_code(n, i, j, k);
 				_putchar('\n');
 			}
 		}
