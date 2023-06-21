@@ -20,6 +20,8 @@ void times_table(void)
 		{
 			k = i * j;
 			_putchar('0' + k);
+			_putchar(',');
+			_putchar(' ');
 		}
 		_putchar('\n');
 	}
