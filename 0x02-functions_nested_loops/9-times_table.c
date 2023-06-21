@@ -29,7 +29,7 @@ void times_table(void)
 					_putchar(' ');
 				}
 			}
-			else if (k => 10)
+			else if (k >= 10)
 			{
 				int r = k / 10;
 				int s = k % 10;
