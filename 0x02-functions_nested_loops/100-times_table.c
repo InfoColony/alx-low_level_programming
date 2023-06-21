@@ -73,52 +73,55 @@ void above_100(int z)
 
 void factored_code(int n, int i, int j, int k)
 {
-	k = i * j;
-	if (k <= 9)
+	for (; j <= n; j++)
 	{
-		_putchar('0' + k);
-		if (j < n && 9 >= ((j + 1) * i))
+		k = i * j;
+		if (k <= 9)
 		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-		}
-		else if (j < n && 9 < ((j + 1) * i))
-		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-		}
-	}
-	else if (k > 9 && k < 100)
-	{
-		_putchar('0' + (k / 10));
-		_putchar('0' + (k % 10));
-		if (j < n)
-		{
-			if (j == n)
-				continue;
-			else if (j < n && ((j + 1) * i) > 99)
+			_putchar('0' + k);
+			if (j < n && 9 >= ((j + 1) * i))
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 			}
-			else
+			else if (j < n && 9 < ((j + 1) * i))
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
 		}
-	}
-	else if (k > 99)
-	{
-		above_100(k);
-		if (j < n || 9 >= ((j - 1) * i))
+		else if (k > 9 && k < 100)
 		{
-			_putchar(',');
-			_putchar(' ');
+			_putchar('0' + (k / 10));
+			_putchar('0' + (k % 10));
+			if (j < n)
+			{
+				if (j == n)
+					continue;
+				else if (j < n && ((j + 1) * i) > 99)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+			}
+		}
+		else if (k > 99)
+		{
+			above_100(k);
+			if (j < n || 9 >= ((j - 1) * i))
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 }
