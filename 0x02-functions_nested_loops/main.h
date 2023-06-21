@@ -4,4 +4,4 @@
 
 int _putchar(char n);
 
-void jack_bauer(void);
+void times_table(void);
