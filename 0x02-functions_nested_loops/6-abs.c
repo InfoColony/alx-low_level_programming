@@ -9,7 +9,18 @@
 
 int _abs(int i)
 {
-	if (i <= 0 || i >= 0)
+	if (i < 0)
+	{
+		int j = 0;
+		int c = 0;
+
+		while (j >= i)
+		{
+			c++;
+			j--;
+		}
+		return (c);
+	} else
 		return (i);
 	return (0);
 }
