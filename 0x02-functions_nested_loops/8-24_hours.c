@@ -17,7 +17,7 @@ void jack_bauer(void)
 
 		for (; j <= 9; j++)
 		{
-			int k = i;
+			int k = 0;
 
 			if (i == 2 && j == 4)
 				break;
