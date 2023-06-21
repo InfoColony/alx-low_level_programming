@@ -3,7 +3,12 @@
 /**
  * print_times_table - A function that prints n times table
  * @n: the number of the times table the function would print
+ * above_100 - A function to print numbers above 99
+ * @z: the input of the function above_100
  */
+
+
+void above_100(int z);
 
 
 void print_times_table(int n)
@@ -32,9 +37,10 @@ void print_times_table(int n)
 							_putchar(',');
 							_putchar(' ');
 							_putchar(' ');
+							_putchar(' ');
 						}
 					}
-					else if (k > 9)
+					else if (k > 9 && k < 100)
 					{
 						_putchar('0' + (k / 10));
 						_putchar('0' + (k % 10));
@@ -42,11 +48,37 @@ void print_times_table(int n)
 						{
 							_putchar(',');
 							_putchar(' ');
+							_putchar(' ');
 						}
+					}
+					else if (k > 99)
+					{
+						above_100(k);
+                        if (j < n || 9 >= ((j - 1) * i))
+                        {
+                            _putchar(',');
+                            _putchar(' ');
+                            _putchar(' ');
+                        }
 					}
 				}
 				_putchar('\n');
 			}
 		}
 	}
+}
+
+
+
+void above_100(int z)
+{
+	int f, s, t, h;
+
+	f = z / 100;
+	h = z / 10;
+	s = h % 10;
+	t = z % 100;
+	_putchar('0' + f);
+	_putchar('0' + s);
+	_putchar('0' + t);
 }
