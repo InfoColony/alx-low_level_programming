@@ -39,6 +39,12 @@ void print_times_table(int n)
 							_putchar(' ');
 							_putchar(' ');
 						}
+						else if (j < n && 9 < ((j + 1) * i))
+						{
+							_putchar(',');
+                            _putchar(' ');
+                            _putchar(' ');
+						}
 					}
 					else if (k > 9 && k < 100)
 					{
