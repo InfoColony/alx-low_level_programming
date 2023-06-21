@@ -50,7 +50,7 @@ void print_times_table(int n)
 					{
 						_putchar('0' + (k / 10));
 						_putchar('0' + (k % 10));
-						if (j < n && 9 >= ((j - 1) * i))
+						if (1 + j < n || 9 >= ((j - 1) * i))
 						{
 							_putchar(',');
 							_putchar(' ');
