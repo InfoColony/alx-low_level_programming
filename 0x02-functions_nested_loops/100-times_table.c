@@ -3,8 +3,6 @@
 /**
  * print_times_table - A function that prints n times table
  * @n: the number of the times table the function would print
- * above_100 - A function to print numbers above 99
- * @z: the input of the function above_100
  */
 
 
