@@ -20,7 +20,7 @@ void times_table(void)
 		for (; j <= 9; j++)
 		{
 			k = i * j;
-			write(1, &k, 5);
+			write(1, &k, 1);
 			_putchar(',');
 			_putchar(' ');
 		}
