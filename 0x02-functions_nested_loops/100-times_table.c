@@ -15,6 +15,9 @@ void print_times_table(int n)
 		if (n == 0)
 		{
 			_putchar('0' + n);
+		}
+		else
+		{
 			for (; i <= n; i++)
 			{
 				j = 0;
