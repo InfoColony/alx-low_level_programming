@@ -20,6 +20,7 @@ void print_times_table(int n)
 		if (n == 0)
 		{
 			_putchar('0' + n);
+			_putchar('\n');
 		}
 		else
 		{
@@ -84,6 +85,10 @@ void print_times_table(int n)
 }
 
 
+/**
+ * above_100 - A function to print numbers above 99                                                                                                  
+ * @z: the input of the function above_100
+ */
 
 void above_100(int z)
 {
