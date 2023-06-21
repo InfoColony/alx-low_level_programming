@@ -14,7 +14,7 @@ int _abs(int i)
 		int j = 0;
 		int c = 0;
 
-		while (j >= i)
+		while (j > i)
 		{
 			c++;
 			j--;
