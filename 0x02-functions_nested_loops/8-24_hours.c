@@ -21,7 +21,8 @@ void jack_bauer(void)
 
 			for (; k <= 5; k++)
 			{
-				l = (k == i) ? j + 1 : 0;
+				/*l = (k == i) ? j + 1 : 0;*/
+				l = 0;
 				for (; l <= 9; l++)
 				{
 					_putchar('0' + i);
