@@ -77,7 +77,7 @@ void above_100(int z)
 	f = z / 100;
 	h = z / 10;
 	s = h % 10;
-	t = z % 100;
+	t = (z % 10) % 10;
 	_putchar('0' + f);
 	_putchar('0' + s);
 	_putchar('0' + t);
