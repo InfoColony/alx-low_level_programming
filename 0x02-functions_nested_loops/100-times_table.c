@@ -5,8 +5,14 @@
  * @n: the number of the times table the function would print
  * above_100 - A function to print numbers above 99
  * @z: the input of the function above_100
+ * factored_code - factored the code for more readability
+ * @i: an argument
+ * @j: an argument
+ * @k: an argument
+ * @n: an argument
  */
 
+void factored_code(int n, int i, int j, int k);
 
 void above_100(int z);
 
