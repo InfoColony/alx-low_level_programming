@@ -14,13 +14,15 @@ int print_last_digit(int i)
 	if (i < 0)
 	{
 		int j = i % 10;
+		int k = 0;
 
 		while (j < 0)
 		{
 			j++;
+			k++;
 		}
-		_putchar('0' + j);
-		return (j);
+		_putchar('0' + k);
+		return (k);
 	}
 	else
 	{
