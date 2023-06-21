@@ -31,8 +31,11 @@ void times_table(void)
 			}
 			else if (k > 10)
 			{
-				_putchar('0' + (k / 10));
-				_putchar('0' + (k % 10));
+				int r = k / 10;
+				int s = k % 10;
+
+				_putchar('0' + r);
+				_putchar('0' + s);
 				if (j < 9)
 				{
 					_putchar(',');
