@@ -24,12 +24,14 @@ int print_last_digit(int i)
 		}
 		j = j + 100;
 		r = j % 10;
+		_putchar('0' + r);
 		return (r);
 	}
 	else
 	{
 		int l = i % 10;
 
+		_putchar('0' + l);
 		return (l);
 	}
 }
