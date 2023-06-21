@@ -52,7 +52,7 @@ void print_times_table(int n)
 						_putchar('0' + (k % 10));
 						if (j < n)
 						{
-							if (j == n || 99 <= ((j + 1) * i))
+							if (j == n)
 								continue;
 							else if (j < n && ((j + 1) * i) > 99)
 							{
