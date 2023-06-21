@@ -1,4 +1,4 @@
-
+#include "main.h"
 
 /**
  * print_times_table - A function that prints n times table
@@ -24,7 +24,8 @@ void print_times_table(int n)
 					if (j <= 9 && 9 >= ((j + 1) * i))
 					{
 						_putchar(',');
-						_putchar('  ');
+						_putchar(' ');
+						_putchar(' ');
 					}
 				}
 				else if (k > 9)
@@ -35,6 +36,7 @@ void print_times_table(int n)
 					{
 						_putchar(',');
 						_putchar(' ');
+					}
 				}
 			}
 		}
