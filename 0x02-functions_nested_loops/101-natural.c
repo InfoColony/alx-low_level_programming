@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+/**
+ * main - Entry point
+ */
+
+
+void main(void)
+{
+	int i = 3;
+	int sum = 0;
+
+	for (; i < 1024; i++)
+	{
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
+	}
+	printf("%d\n", sum);
+}
