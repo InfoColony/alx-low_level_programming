@@ -3,10 +3,11 @@
 
 /**
  * main - Entry point
+ * Return: Always 0
  */
 
 
-void main(void)
+int main(void)
 {
 	int i = 3;
 	int sum = 0;
@@ -17,4 +18,5 @@ void main(void)
 			sum += i;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
