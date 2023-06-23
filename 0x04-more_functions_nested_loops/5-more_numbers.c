@@ -17,9 +17,7 @@ void more_numbers(void)
 		{
 			if (j <= 9)
 			{
-				/**
-				 * write(1, &j, 1);
-				 */
+				_putchar('0' + j);
 			}
 			else
 			{
