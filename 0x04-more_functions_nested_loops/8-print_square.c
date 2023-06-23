@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_diagonal - A function that prints a diagonal line to the terminal
+ * print_square - A function that prints square (#) to the terminal
  * @n: the input to the function
  */
 
 
-void print_diagonal(int n)
+void print_square(int n)
 {
 	if (n > 0)
 	{
@@ -16,9 +16,8 @@ void print_diagonal(int n)
 		{
 			int j = 1;
 
-			for (; j < i; j++)
-				_putchar(' ');
-			_putchar('\\');
+			for (; j < n; j++)
+				_putchar('#');
 			_putchar('\n');
 		}
 	} else
