@@ -23,8 +23,8 @@ void more_numbers(void)
 			else
 			{
 				write(1, &k, 1);
-				k++
+				k++;
 			}
 		}
-	}_putchar('\n');
+	} _putchar('\n');
 }
