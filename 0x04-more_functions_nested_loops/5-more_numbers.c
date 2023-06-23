@@ -26,5 +26,5 @@ void more_numbers(void)
 				k++
 			}
 		}
-	}
+	}_putchar('\n');
 }
