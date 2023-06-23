@@ -21,8 +21,13 @@ void more_numbers(void)
 			}
 			else
 			{
-				_putchar('0' + j / 10);
-				_putchar('0' + j % 10);
+				int k = 0, r;
+
+				for (; k <= 1; k++)
+				{
+					r = (k == 0) ? j / 10 : j % 10;
+					_putchar('0' + r);
+				}
 			}
 		}
 	} _putchar('\n');
