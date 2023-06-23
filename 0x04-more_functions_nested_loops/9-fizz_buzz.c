@@ -13,21 +13,24 @@ int main(void)
 
 	for (; i <= 100; i++)
 	{
+		char r;
+
 		if (i > 2)
 		{
 			if (i % 3 == 0 || i % 5 == 0)
 			{
 				if (i % 3 == 0 && i % 5 != 0)
-					printf("Fizz ");
+					printf("Fizz");
 				else if (i % 5 == 0 && i % 3 != 0)
-					printf("Buzz ");
+					printf("Buzz");
 				else
-					printf("FizzBuzz ");
+					printf("FizzBuzz");
 			} else
-				printf("%d ", i);
+				printf("%d", i);
 		} else
-			printf("%d ", i);
+			printf("%d", i);
+		r = (i < 100) ? ' ' : '\n';
+		putchar(r);
 	}
-	putchar('\n');
 	return (0);
 }
