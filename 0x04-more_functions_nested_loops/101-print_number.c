@@ -1,52 +1,36 @@
 #include "main.h"
 
-
+int _putchar(char c);
 /**
- * print_number - a function that prints the given input
- *  the input
- * signedint - input is signed
- * unsint - input is unsigned
- * @int: input
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
  */
-
-
-void signedint(int);
-
-void unsint(unsigned int);
-
-
 void print_number(int n)
 {
+	unsigned int i, j, k;
+
 	if (n < 0)
-		signedint(n);
-	else
-		unsint(n);
-}
-
-/**
- * signedint - input is signed
- * @s: input
- */
-void signedint(int s)
-{
-	if (s < 0)
 	{
-		_putchar('-');
-		s = -s;
+		_putchar(45);
+		i = n * -1;
 	}
-	if (s >= 10)
-		signedint(s / 10);
-	_putchar('0' + s % 10);
-}
+	else
+	{
+		i = n;
+	}
 
-/**
- * unsint - input is unsigned
- * @us: input
- */
+	j = i;
+	k = 1;
 
-void unsint(unsigned int us)
-{
-	if (us >= 10)
-		unsint(us / 10);
-	_putchar('0' + us % 10);
+	while (j > 9)
+	{
+		j /= 10;
+		k *= 10;
+	}
+
+	for (; k >= 1; k /= 10)
+	{
+		_putchar(((i / k) % 10) + 48);
+	}
 }
