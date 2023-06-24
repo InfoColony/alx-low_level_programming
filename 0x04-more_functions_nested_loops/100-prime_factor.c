@@ -8,7 +8,7 @@
 
 
 
-void recurs(int);
+void recurs(unsigned long int);
 
 int main(void)
 {
@@ -21,9 +21,9 @@ int main(void)
  * @c: the number to be recursed on
  */
 
-void recurs(int c)
+void recurs(unsigned long int c)
 {
-	int i == 2;
+	unsigned long int i = 2;
 
 	for (; i <= c; i++)
 	{
@@ -34,5 +34,5 @@ void recurs(int c)
 			return;
 		}
 	}
-	printf("%d\n", c);
+	printf("%ld\n", c);
 }
