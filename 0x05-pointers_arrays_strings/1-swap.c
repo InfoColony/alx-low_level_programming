@@ -2,11 +2,16 @@
 
 
 /**
- * reset_to_98 - A function that changes it's input external value
- * @n: the input to the function
+ * swap_int - A function that changes it's input external value
+ * @a: the input to the function
+ * @b: input to the function
  */
 
-void reset_to_98(int *n)
+void swap_int(int *a, int *b);
 {
-	*n = 98;
+	int c = *a;
+
+	*a == *b;
+
+	*b = c;
 }
