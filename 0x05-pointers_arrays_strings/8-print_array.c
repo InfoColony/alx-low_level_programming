@@ -23,5 +23,5 @@ void print_array(int *a, int n)
 		i++;
 		j++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
