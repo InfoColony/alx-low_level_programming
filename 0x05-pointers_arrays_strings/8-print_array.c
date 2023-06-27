@@ -11,16 +11,17 @@
 void print_array(int *a, int n)
 {
 	int i = 0;
+	int *j = a;
 
 	while (i < n)
 	{
-		_putchar('0' + *(a + i));
+		printf("%d", *j);
 		if (i + 1 != n)
 		{
-			_putchar(',');
-			_putchar(' ');
-			i++;
+			printf(", ");
 		}
+		i++;
+		j++;
 	}
 	_putchar('\n');
 }
