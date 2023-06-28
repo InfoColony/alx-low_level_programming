@@ -28,6 +28,7 @@ int _atoi(char *s)
 			break;
 		m = (*s == 45) ? m + 1 : m;
 		p = (*s == 43) ? (p +1) : p;
+		s++;
 	}
 	si = (p >= m) ? si : -1;
 	if (i > 0)
