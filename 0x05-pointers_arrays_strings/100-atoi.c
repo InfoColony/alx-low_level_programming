@@ -31,7 +31,7 @@ int _atoi(char *s)
 		s++;
 	}
 	if (p == m || (p - 1) == m)
-		continue;
+		si = si;
 	else if (m > 0 && (p + 2) > m)
 		si = -1;
 	else
