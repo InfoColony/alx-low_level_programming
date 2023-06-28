@@ -12,8 +12,8 @@ int _atoi(char *s)
 	int i = 0;
 	int m = 0;
 	int p = 0;
-	int t = 0;
-	int d = 0;
+	unsigned int t = 0;
+	unsigned int d = 0;
 	int si = 1;
 
 	while (*s != '\0')
