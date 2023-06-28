@@ -30,7 +30,12 @@ int _atoi(char *s)
 		p = (*s == 43) ? (p +1) : p;
 		s++;
 	}
-	si = (p >= m) ? si : -1;
+	if (p == m || (p - 1) == m)
+		continue;
+	else if (m > 0 && (p + 2) > m)
+		si = -1;
+	else
+		si = -1;
 	if (i > 0)
 		return (t * si);
 	else
