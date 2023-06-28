@@ -14,7 +14,7 @@ int _atoi(char *s)
 	int p = 0;
 	int t = 0;
 	int d = 0;
-	int s = 1;
+	int si = 1;
 
 	while (*s != '\0')
 	{
@@ -29,9 +29,9 @@ int _atoi(char *s)
 		m = (*s == 45) ? m++ : ;
 		p = (*s == 43) ? p++ : ;
 	}
-	s = (p >= m) ? : -1;
+	si = (p >= m) ? : -1;
 	if (i > 0)
-		return (t * s);
+		return (t * si);
 	else
 		return (0);
 }
