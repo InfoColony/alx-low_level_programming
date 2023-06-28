@@ -29,7 +29,7 @@ int _atoi(char *s)
 		m = (*s == 45) ? m++ : m;
 		p = (*s == 43) ? p++ : p;
 	}
-	si = (p >= m) ? : -1;
+	si = (p >= m) ? si : -1;
 	if (i > 0)
 		return (t * si);
 	else
