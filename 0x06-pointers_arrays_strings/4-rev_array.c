@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * 
- *
- *
+ * reverse_array - A function that prints array in reverse
+ * @a: an input to the function
+ * @n: an input to the function
  */
 
 
