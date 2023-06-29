@@ -12,6 +12,16 @@ char *cap_string(char *r)
 	char *sp = sep;
 	char *p;
 
+	if (*sp >= 'a' && *sp <= 'z')
+	{
+		char f = 'A';
+
+		for (; f <= 'Z'; f++)
+		{
+			if (*sp - f == 32)
+				*sp = f;
+		}
+	}
 	while (*sp != '\0')
 	{
 		p = r;
