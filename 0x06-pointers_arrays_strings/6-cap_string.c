@@ -11,19 +11,18 @@ char *cap_string(char *r)
 	char sep[] = "\t\n,; .?\"(){}";
 	char *sp = sep;
 	char *p;
+	char *fl = r;
 
-	/*
-	  if (*sp >= 'a' && *sp <= 'z')
+	if (*fl >= 'a' && *fl <= 'z')
 	{
 		char f = 'A';
 
 		for (; f <= 'Z'; f++)
 		{
-			if (*sp - f == 32)
-				*sp = f;
+			if (*fl - f == 32)
+				*fl = f;
 		}
 	}
-	*/
 	while (*sp != '\0')
 	{
 		p = r;
