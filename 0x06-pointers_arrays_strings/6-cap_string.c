@@ -12,7 +12,8 @@ char *cap_string(char *r)
 	char *sp = sep;
 	char *p;
 
-	if (*sp >= 'a' && *sp <= 'z')
+	/*
+	  if (*sp >= 'a' && *sp <= 'z')
 	{
 		char f = 'A';
 
@@ -22,6 +23,7 @@ char *cap_string(char *r)
 				*sp = f;
 		}
 	}
+	*/
 	while (*sp != '\0')
 	{
 		p = r;
