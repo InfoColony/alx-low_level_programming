@@ -21,7 +21,7 @@ char *cap_string(char *r)
 			{
 				char a = 'A';
 
-				for (; a >= 'Z')
+				for (; a >= 'Z'; a++)
 				{
 					if (*(p + 1) - a == 32)
 						*(p + 1) = a;
