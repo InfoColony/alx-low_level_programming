@@ -17,23 +17,16 @@ char *rot13(char *r)
 
 		while (((*p >= 'a' && *p <= 'z') || (*p >= 'A' && *p <= 'Z')) && a <= 'z')
 		{
+			char t = *p;
+
+			t = t - 13;
 			if ((*p >= 'a' && *p <= 'm') || (*p >= 'A' && *p <= 'M'))
 			{
-				char t = *p;
-
+				t = *p;
 				t = t + 13;
-				*p = t;
-				break;
-			}/*
-			else
-			{
-				char t1 = *p;
-
-				t1 = t1 - 13;
-				*p = t1;
-				break;
 			}
-			 */a++;
+			a++;
+			break;
 		}
 		p++;
 	}
