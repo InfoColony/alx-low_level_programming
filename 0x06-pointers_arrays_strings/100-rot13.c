@@ -2,9 +2,9 @@
 
 
 /**
- * rot13 - A function that creates a code 
+ * rot13 - A function that creates a code
  * @r: an input to the function
- * return: return the created code
+ * Return: return the created code
  */
 
 char *rot13(char *r)
@@ -20,6 +20,7 @@ char *rot13(char *r)
 			if ((*p >= 'a' && *p <= 'm') || (*p >= 'A' && *p <= 'M'))
 			{
 				char t = *p;
+
 				t = t + 13;
 				*p = t;
 				break;
@@ -27,6 +28,7 @@ char *rot13(char *r)
 			else
 			{
 				char t1 = *p;
+
 				t1 = t1 - 13;
 				*p = t1;
 				break;
@@ -35,6 +37,5 @@ char *rot13(char *r)
 		}
 		p++;
 	}
-	
 	return (r);
 }
