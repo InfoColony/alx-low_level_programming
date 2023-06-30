@@ -14,7 +14,6 @@ char *leet(char *r)
 	while (*p != '\0')
 	{
 		char a[] = "aeotl";
-		char b[] = "AEOTL";
 		char c[] = "43071";
 		int j = 0;
 
