@@ -23,14 +23,14 @@ char *rot13(char *r)
 				t = t + 13;
 				*p = t;
 				break;
-			}
+			}/*
 			else
 			{
 				char t1 = *p;
 				t1 = t1 - 13;
 				*p = t1;
 				break;
-			}
+			}*/
 			a++;
 		}
 		p++;
