@@ -25,6 +25,7 @@ char *rot13(char *r)
 				t = *p;
 				t = t + 13;
 			}
+			*p = t;
 			a++;
 			break;
 		}
