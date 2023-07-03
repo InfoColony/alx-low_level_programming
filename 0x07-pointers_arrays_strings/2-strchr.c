@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - A function that locate's a character in a string
+ * _strchr - A function that locate's a character in a string
  * @s: an input to the string
  * @c: an input to the function
  *Return: returns the first seen character
