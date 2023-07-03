@@ -17,8 +17,8 @@ char *_strchr(char *s, char c)
 		if (*p == c)
 		{
 			break;
-			return (*p);
 		}
 		p++;
 	}
+	return (p);
 }
