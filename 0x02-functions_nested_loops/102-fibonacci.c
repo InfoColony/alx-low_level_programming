@@ -15,8 +15,10 @@ long int fibonacci(int n, long int *arr);
 int main(void)
 {
 	int i = 1;
-	long int arr[50] = {0};
+	long int arr[51] = {0};
 
+	arr[1] = 1;
+	arr[2] = 2;
 	for (; i <= 50; i++)
 	{
 		printf("%ld", fibonacci(i, arr));
@@ -36,11 +38,6 @@ int main(void)
 
 long int fibonacci(int a, long *arr)
 {
-	if (a <= 2)
-	{
-		arr[a] = a;
-		return (a);
-	}
 	if (arr[a])
 		return (arr[a]);
 	arr[a] = (fibonacci(a - 1, arr) + fibonacci(a - 2, arr));
