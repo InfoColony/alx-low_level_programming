@@ -13,12 +13,12 @@ long int fibonacci(int n);
 
 int main(void)
 {
-	int i = 0;
+	int i = 1;
 
-	for (; i < 50; i++)
+	for (; i <= 50; i++)
 	{
 		printf("%ld", fibonacci(i));
-		if (i < 49)
+		if (i < 50)
 			printf(", ");
 	}
 	putchar('\n');
