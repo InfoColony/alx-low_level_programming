@@ -21,9 +21,10 @@ void fib(void)
 {
 	unsigned long int i = 1;
 	unsigned long int j = 2;
+	int k = 3;
 
 	printf("%lu, %lu, ", i, j);
-	for (int k = 3; k <= 98; k++)
+	for (; k <= 98; k++)
 	{
 		unsigned long int l = i + j;
 
