@@ -8,5 +8,7 @@
 
 int main(void)
 {
+	for (i = 0; i < 5; i++)
+		putchar('\n');
 	return (0);
 }
