@@ -1,9 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - Entry point of the program
- * Return: 0
+ * main - Entry point of the grogram
+ * Return: return 0
  */
+
 void fib(void);
 
 int main(void)
@@ -14,25 +14,34 @@ int main(void)
 }
 
 /**
- * fib - A function that prints fibonacci sequence
+ * fib - A function that prints fibonacci sequence upto 98
  */
-
 void fib(void)
 {
-	unsigned long int i = 1;
-	unsigned long int j = 2;
-	int k = 3;
+	unsigned long int j, k, jd, jr, kd, kr;
+	int i = 1;
 
-	printf("%lu, %lu, ", i, j);
-	for (; k <= 98; k++)
+	j = 1;
+	k = 2;
+
+	printf("%lu", j);
+	for (; i < 91; i++)
 	{
-		unsigned long int l = i + j;
-
-		if (k < 98)
-			printf("%lu, ", l);
-		else
-			printf("%lu", l);
-		i = j;
-		j = l;
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
+	}
+	jd = j / 1000000000;
+	jr = j % 1000000000;
+	kd = k / 1000000000;
+	kr = k % 1000000000;
+	for (; i < 98; ++i)
+	{
+		printf(", %lu", kd + (kr / 1000000000));
+		printf("%lu", kr % 1000000000);
+		kd = kd + jd;
+		jd = kd - jd;
+		kr = kr + jr;
+		jr = kr - jr;
 	}
 }
