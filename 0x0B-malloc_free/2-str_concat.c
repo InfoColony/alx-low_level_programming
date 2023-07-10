@@ -37,12 +37,11 @@ char *str_concat(char *s1, char *s2)
 		{
 			cst[j] = *i;
 			i++;
-		}
-		if (*i == '\0')
+		} else
 		{
 			if (*i2 != '\0')
 			{
-				cst[j + 1] = *i2;
+				cst[j] = *i2;
 				i2++;
 			}
 		}
