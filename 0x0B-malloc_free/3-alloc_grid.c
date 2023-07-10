@@ -5,6 +5,7 @@
  * alloc_grid - function that create a two dimentional array
  * @width: An input to the function
  * @height: An input to the function
+ * Return: return a pointer to a two dimenasional array
  */
 
 int **alloc_grid(int width, int height)
@@ -21,7 +22,7 @@ int **alloc_grid(int width, int height)
 		tar[i] = malloc(height * sizeof(int));
 		j = 0;
 		for (; j < height; j++)
-			tar[i] = 0;
+			tar[i][j] = 0;
 	}
 	return (tar);
 }
