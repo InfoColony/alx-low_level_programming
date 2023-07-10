@@ -10,8 +10,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *i = s1;
-	char *i2 = s2;
+	char *i = (s1 == NULL ? "" : s1);
+	char *i2 = (s2 == NULL ? "" : s2);
 	int len = 0;
 	char *cst;
 	int j = 0;
@@ -26,8 +26,8 @@ char *str_concat(char *s1, char *s2)
 		len++;
 		i2++;
 	}
-	i = s1;
-	i2 = s2;
+	i = (s1 == NULL ? "" : s1);
+	i2 = (s2 == NULL ? "" : s2);
 	cst = malloc(len);
 	if (cst == NULL)
 		return (NULL);
