@@ -27,6 +27,8 @@ char *_strdup(char *str)
 		char *du;
 
 		du = malloc(i + 1);
+		if (du == NULL)
+			return (NULL);
 		while (j < i)
 		{
 			du[j] = *s2;
