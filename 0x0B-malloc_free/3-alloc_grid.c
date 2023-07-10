@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 	int **tar;
 	int j;
 
-	tar = malloc(width * sizeof(int*));
+	tar = malloc(width * sizeof(int *));
 	if (tar == NULL || width <= 0 || height <= 0)
 	{
 		free(tar);
