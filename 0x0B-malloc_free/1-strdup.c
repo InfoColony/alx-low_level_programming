@@ -38,4 +38,5 @@ char *_strdup(char *str)
 	}
 	if (i == 0)
 		return("");
+	return (NULL);
 }
