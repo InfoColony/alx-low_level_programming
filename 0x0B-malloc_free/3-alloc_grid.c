@@ -14,16 +14,22 @@ int **alloc_grid(int width, int height)
 	int **tar;
 	int j;
 
-	tar = malloc(width * sizeof(int *));
-	if (tar == NULL || width <= 0 || height <= 0)
-	{
-		free(tar);
+	if (width <= 0 || height <= 0)
 		return (NULL);
-	}
+	tar = malloc(width * sizeof(int *));
+	if (tar == NULL)
+		return (NULL);
 	for (; i < width; i++)
 	{
 		tar[i] = malloc(height * sizeof(int));
 		j = 0;
+		if (tar[i] == NULL)
+		{
+			for (; j < i; j++)
+				free(tar[j]);
+			free(tar);
+			return (NULL);
+		}
 		for (; j < height; j++)
 			tar[i][j] = 0;
 	}
