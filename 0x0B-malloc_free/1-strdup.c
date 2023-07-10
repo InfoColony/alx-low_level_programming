@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		i++;
 		s1++;
 	}
-	if (i > 0)
+	if (i > 0 && i > 3)
 	{
 		char *s2 = str;
 		int j = 0;
