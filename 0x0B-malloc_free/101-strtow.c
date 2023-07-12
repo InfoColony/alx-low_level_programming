@@ -39,17 +39,7 @@ char **strtow(char *str)
 	st = malloc((hld + 1) * sizeof(char *));
 	if (st == NULL || hld == 0)
 		return (NULL);
-	func(st, str, j);
-	return (st);
-}
-
-void func(char **pst, char *pstr, int *pj)
-{
-	char *i = pstr;
-	char **st = pst;
-	int *j = pj;
-
-	 while (*i != '\0')
+     while (*i != '\0')
     {
         if (*i != 32)
         {
@@ -62,15 +52,15 @@ void func(char **pst, char *pstr, int *pj)
                 if (*i == '\0' || *i == 32)
                 {
                     int sa = 0;
-                    st[*j] = malloc((wl + 1) * sizeof(char));
+                    st[j] = malloc((wl + 1) * sizeof(char));
                     while(*t != *i)
                     {
-                        st[*j][sa] = *t;
+                        st[j][sa] = *t;
                         t++;
                         sa++;
                         if (*t == *i)
                         {
-                            st[*j][sa] = '\0';
+                            st[j][sa] = '\0';
                             j++;
                             break;
                         }
@@ -82,4 +72,5 @@ void func(char **pst, char *pstr, int *pj)
         }
         i++;
     }
+	return (st);
 }
