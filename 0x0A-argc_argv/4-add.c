@@ -10,19 +10,20 @@
 
 int main(int c, char *arg[])
 {
-    int j, i = 1;
-    int sum = 0;
+	int j, i = 1;
+	int sum = 0;
 
-    if (c <= 1)
-    {
-        printf("0\n");
-        return (0);
-    }
-    for (; i < c; i++)
-    {
+	if (c <= 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+	for (; i < c; i++)
+	{
 		char *s = arg[i];
-        j = 0;
-        for (; s[j] != '\0'; j++)
+
+		j = 0;
+		for (; s[j] != '\0'; j++)
 		{
 			if (s[j] < '0' || s[j] > '9')
 			{
@@ -31,7 +32,7 @@ int main(int c, char *arg[])
 			}
 		}
 		sum += atoi(s);
-    }
-    printf("%d\n", sum);
-    return (0);
+	}
+	printf("%d\n", sum);
+	return (0);
 }
