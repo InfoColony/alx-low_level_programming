@@ -55,7 +55,7 @@ char **strtow(char *str)
 					int sa = 0;
 
 					st[j] = malloc((wl + 1) * sizeof(char));
-					while(*t != *i)
+					while (*t != *i)
 					{
 						st[j][sa] = *t;
 						t++;
