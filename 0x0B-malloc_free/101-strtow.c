@@ -52,7 +52,7 @@ void func(char **st, char *str, int *j)
         {
             char *t = i;
             int wl = 0;
-            while(*i != 32)
+            while(*i != *t)
             {
                 wl++;
                 i++;
