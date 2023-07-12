@@ -18,12 +18,14 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    for (int i = 1; i < argc; i++)
+	int i = 1;
+    for (; i < argc; i++)
     {
         char *arg = argv[i];
 
         // Check if the argument contains non-digit characters
-        for (int j = 0; arg[j] != '\0'; j++)
+		int j = 0;
+        for (; arg[j] != '\0'; j++)
         {
             if (arg[j] < '0' || arg[j] > '9')
             {
