@@ -35,13 +35,13 @@ char **strtow(char *str)
 		i++;
 	}
 	i=str;
+	len = 0;
 	st = malloc((hld + 1) * sizeof(char *));
 	if (st == NULL || hld == 0)
 		return (NULL);
 	func(st, str, &len);
 	return (st);
 }
-
 
 void func(char **st, char *str, int *j)
 {
