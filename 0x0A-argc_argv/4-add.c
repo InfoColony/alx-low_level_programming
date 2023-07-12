@@ -8,38 +8,30 @@
  * Return: return 0 on success and 1 on failure
  */
 
-int main(int argc, char *argv[])
+int main(int c, char *arg[])
 {
+    int j, i = 1;
     int sum = 0;
-	int i;
-	int number;
 
-    if (argc <= 1)
+    if (c <= 1)
     {
         printf("0\n");
-        return 0;
+        return (0);
     }
-
-	i = 1;
-    for (; i < argc; i++)
+    for (; i < c; i++)
     {
-        char *arg = argv[i];
-
-        
-		int j = 0;
-        for (; arg[j] != '\0'; j++)
-        {
-            if (arg[j] < '0' || arg[j] > '9')
-            {
-                printf("Error\n");
-                return 1;
-            }
-        }
-
-        number = atoi(arg);
-        sum += number;
+		char *s = arg[i];
+        j = 0;
+        for (; s[j] != '\0'; j++)
+		{
+			if (s[j] < '0' || s[j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(s);
     }
-
     printf("%d\n", sum);
-    return 0;
+    return (0);
 }
