@@ -15,7 +15,7 @@ char **strtow(char *str)
 	char **st;
 	int hld = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	while (*i != '\0')
 	{
