@@ -12,8 +12,7 @@ char **strtow(char *str)
 {
 	int len = 0;
 	char *i = str;
-	int z = 0;
-	int *j = z;
+	int *j = 0;
 	char **st;
 	int hld = 0;
 
