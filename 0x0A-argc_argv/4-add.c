@@ -12,6 +12,7 @@ int main(int c, char *arg[])
 {
 	int j, i = 1;
 	int sum = 0;
+	char *s = "0";
 
 	if (c <= 1)
 	{
@@ -21,7 +22,7 @@ int main(int c, char *arg[])
 	for (; i < c; i++)
 	{
 		j = atoi(arg[i]);
-		if (j == 0)
+		if (j == 0 && *(arg[i]) != *s)
 		{
 			printf("Error\n");
 			return (1);
