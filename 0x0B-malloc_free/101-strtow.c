@@ -62,15 +62,15 @@ void func(char **pst, char *pstr, int *pj)
                 if (*i == '\0' || *i == 32)
                 {
                     int sa = 0;
-                    st[j] = malloc((wl + 1) * sizeof(char));
+                    st[*j] = malloc((wl + 1) * sizeof(char));
                     while(*t != *i)
                     {
-                        st[j][sa] = *t;
+                        st[*j][sa] = *t;
                         t++;
                         sa++;
                         if (*t == *i)
                         {
-                            st[j][sa] = '\0';
+                            st[*j][sa] = '\0';
                             j++;
                             break;
                         }
