@@ -6,7 +6,7 @@
  * @str: An input to the function
  * Return: return the created string array
  */
-void func(char **, char *, int *);
+
 
 char **strtow(char *str)
 {
