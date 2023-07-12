@@ -8,27 +8,34 @@
  * Return: return 0 on success and 1 on failure
  */
 
-int main(int c, char *arg[])
+int main(int argc, char *argv[])
 {
-	int j, i = 1;
-	int sum = 0;
-	char *s = "0";
+    int sum = 0;
 
-	if (c <= 1)
-	{
-		printf("0\n");
-		return (0);
-	}
-	for (; i < c; i++)
-	{
-		j = atoi(arg[i]);
-		if (j == 0 && *(arg[i]) != *s)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum += j;
-	}
-	printf("%d\n", sum);
-	return (0);
+    if (argc <= 1)
+    {
+        printf("0\n");
+        return 0;
+    }
+
+    for (int i = 1; i < argc; i++)
+    {
+        char *arg = argv[i];
+
+        // Check if the argument contains non-digit characters
+        for (int j = 0; arg[j] != '\0'; j++)
+        {
+            if (arg[j] < '0' || arg[j] > '9')
+            {
+                printf("Error\n");
+                return 1;
+            }
+        }
+
+        int number = atoi(arg);
+        sum += number;
+    }
+
+    printf("%d\n", sum);
+    return 0;
 }
