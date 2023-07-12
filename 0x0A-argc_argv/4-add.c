@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 {
     int sum = 0;
+	int i;
+	int number;
 
     if (argc <= 1)
     {
@@ -18,12 +20,12 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-	int i = 1;
+	i = 1;
     for (; i < argc; i++)
     {
         char *arg = argv[i];
 
-        // Check if the argument contains non-digit characters
+        
 		int j = 0;
         for (; arg[j] != '\0'; j++)
         {
@@ -34,7 +36,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        int number = atoi(arg);
+        number = atoi(arg);
         sum += number;
     }
 
