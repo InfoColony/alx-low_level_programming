@@ -60,12 +60,12 @@ void func(char **st, char *str, int *j)
                 {
                     int sa = 0;
                     st[*j] = malloc((wl + 1) * sizeof(char));
-                    while(*t != *i)
+                    while(*t != 32)
                     {
                         st[*j][sa] = *t;
                         t++;
                         sa++;
-                        if (*t == *i)
+                        if (*t == 32)
                         {
                             st[*j][sa] = '\0';
                             (*j)++;
