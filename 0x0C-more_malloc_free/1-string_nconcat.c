@@ -9,6 +9,10 @@
  *
  */
 
+int lent(char *);
+
+void cpy(char *, char *, int);
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p, *p1, *mp;
