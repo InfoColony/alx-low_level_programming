@@ -2,16 +2,14 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
- *
+ * string_nconcat - A function that concatinate tw0 strings
+ * @spf: an input
+ * Return: returns a pointer if successful
  */
 
-int lent(char *);
+int lent(char *spf);
 
-void cpy(char *, char *, int);
+void cpy(char *fp, char *fp2, int sp);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -36,15 +34,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (ib = 0; ib < n; ib++)
 	{
 		mp[s1l++] = p1[ib];
-	   
 	}
 	mp[siz] = '\0';
 	return (mp);
 }
 
-int lent(char *sp)
+/**
+ * lent - A function that finds the length of string
+ * @spf: an input
+ * Return: return 0
+ */
+int lent(char *spf)
 {
-	char *s = sp;
+	char *s = spf;
 	int i = 0;
 
 	while (*s != '\0')
@@ -55,6 +57,13 @@ int lent(char *sp)
 	return (i);
 }
 
+/**
+ * cpy - A function that copy string to another variable
+ * @fp: An input
+ * @fp2: An Input
+ * @sp: An input
+ * Reuurn: void
+ **/
 void cpy(char *fp, char *fp2, int sp)
 {
 	char *f2 = fp2;
