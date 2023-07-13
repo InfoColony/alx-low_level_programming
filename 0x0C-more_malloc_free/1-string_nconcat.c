@@ -35,10 +35,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (ib = 0; ib < n; ib++)
 	{
-		mp[s1l + 1] = p1[ib];
-		s1l++;
+		mp[s1l++] = p1[ib];
+	   
 	}
-	mp[siz + 1] = '\0';
+	mp[siz] = '\0';
 	return (mp);
 }
 
@@ -52,7 +52,7 @@ int lent(char *sp)
 		i++;
 		s++;
 	}
-	return (i - 1);
+	return (i);
 }
 
 void cpy(char *fp, char *fp2, int sp)
