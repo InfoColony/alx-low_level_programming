@@ -16,7 +16,7 @@ void cpy(char *, char *, int);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p, *p1, *mp;
-	int s1l, s2l, siz, ib;
+	unsigned int s1l, s2l, siz, ib;
 
 	p = (s1 == NULL) ? "" : s1;
 	p1 = (s2 == NULL) ? "" : s2;
@@ -30,21 +30,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= s2l)
 	{
 		cpy(mp, p1, s1l);
+		mp[s1l++] = '\0';
 		return (mp);
 	}
 	for (ib = 0; ib < n; ib++)
 	{
 		mp[s1l + 1] = p1[ib];
-		ib++;
 		s1l++;
 	}
+	mp[siz + 1] = '\0';
 	return (mp);
 }
 
 int lent(char *sp)
 {
-	char *s;
-	int i = 1;
+	char *s = sp;
+	int i = 0;
 
 	while (*s != '\0')
 	{
@@ -54,9 +55,9 @@ int lent(char *sp)
 	return (i - 1);
 }
 
-void cpy(char *fp, char *fp, int sp)
+void cpy(char *fp, char *fp2, int sp)
 {
-	char *f2 = fp;
+	char *f2 = fp2;
 
 	while (*f2 != '\0')
 	{
