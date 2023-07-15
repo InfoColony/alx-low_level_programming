@@ -3,25 +3,24 @@
 /**
  * is_palindrome - a function that checkes if a string is palindrom
  * @int: an input
- * @char: an input
+ * @p: an input
  * Return: return 0 or 1
  */
 
-int rec(int, int, char *);
+int rec(int, int, char *p);
 int strl(char *);
 
 int is_palindrome(char *s)
 {
 	int len = strl(s);
 
-	return (rec(0, len, s);
+	return (rec(0, len, s));
 }
 /**
  * strl - A function that returns the length of a string
  * @st: an input to the function
  * Return: return the length of the input string
  */
-		
 int strl(char *st)
 {
 	if (*st == '\0')
