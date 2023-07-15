@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _sqrt - A function that returns the squareroot of an input
- * @n: an input to the function
+ * _sqrt_recursion - A function that returns the squareroot of an input
+ * @int: ant input
  * Return: returns the squareroot
  */
 
