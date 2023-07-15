@@ -14,7 +14,7 @@ int is_palindrome(char *s)
 {
 	int len = strl(s);
 
-	return (rec(0, len, s));
+	return (rec(0, len - 1, s));
 }
 /**
  * strl - A function that returns the length of a string
