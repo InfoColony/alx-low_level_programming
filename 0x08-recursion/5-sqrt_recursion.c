@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * _sqrt - A function that returns the squareroot of an input
+ * @n: an input to the function
+ * Return: returns the squareroot
  */
 
 int rec(int, int, int);
