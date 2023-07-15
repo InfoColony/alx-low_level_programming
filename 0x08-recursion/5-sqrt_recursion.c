@@ -6,7 +6,7 @@
  * Return: returns the squareroot
  */
 
-int rec(int, int, int);
+int rec(long int, long int, long int);
 
 int _sqrt_recursion(int n)
 {
@@ -25,9 +25,9 @@ int _sqrt_recursion(int n)
  * Return: returns the calculated squareroot
  */
 
-int rec(int i, int j, int k)
+int rec(long int i, long int j, long int k)
 {
-	int av = (j + k) / 2;
+	long int av = (j + k) / 2;
 
 	if (av * av == i)
 		return (av);
