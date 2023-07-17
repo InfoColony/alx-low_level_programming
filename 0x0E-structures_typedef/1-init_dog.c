@@ -7,9 +7,28 @@
  * @owner: An input
  * @d: an input
  */
+int len(char *);
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	d->name = malloc(len(name) + 1);
 	d->name = name;
 	d->age = age;
+	d->owner = malloc(len(owner) + 1);
 	d->owner = owner;
+}
+
+
+int len(char *s)
+{
+	int i = 0;
+	char *p = s;
+
+	
+	while (*p != '\0')
+	{
+		i++;
+		p++;
+	}
+	return (i);
 }
