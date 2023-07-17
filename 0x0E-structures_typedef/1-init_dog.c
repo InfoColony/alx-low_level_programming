@@ -11,10 +11,12 @@ int len(char *);
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->name = malloc(len(name) + 1);
+	int j = len(name);
+	d->name = malloc(j + 1);
 	d->name = name;
 	d->age = age;
-	d->owner = malloc(len(owner) + 1);
+	j=len(owner);
+	d->owner = malloc(j + 1);
 	d->owner = owner;
 }
 
