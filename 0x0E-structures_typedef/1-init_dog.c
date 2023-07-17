@@ -9,9 +9,8 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->owner = malloc(sizeof(owner));
-	d->name = malloc(sizeof(name));
-	if (d->name == NULL || d->owner == NULL)
+	d = malloc(sizeof(struct dog));
+	if (d == NULL)
 		return;
 	d->name = name;
 	d->age = age;
