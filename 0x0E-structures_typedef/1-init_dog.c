@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include <stdlib.h>
 /**
  * init_dog - A void function
  * @name: An input
@@ -8,16 +8,16 @@
  * @d: an input
  */
 int len(char *);
-
+void stc(char *,char *);
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	int j = len(name);
 	d->name = malloc(j + 1);
-	d->name = name;
+	stc(d->name,name);
 	d->age = age;
 	j=len(owner);
 	d->owner = malloc(j + 1);
-	d->owner = owner;
+	stc(d->owner,owner);
 }
 
 
@@ -33,4 +33,17 @@ int len(char *s)
 		p++;
 	}
 	return (i);
+}
+
+void stc(char *s1, char *s2)
+{
+	char *c = s2;
+	int li = 0;
+	while(*c != '\0')
+	{
+		s1[li] = *c;
+		c++;
+		li++;
+	}
+	s1[li] = '\0';
 }
