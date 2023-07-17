@@ -1,4 +1,3 @@
-#ifndef S
-#define S
+#ifndef SIZE
 #define SIZE 1024
-#endif S
+#endif SIZE
