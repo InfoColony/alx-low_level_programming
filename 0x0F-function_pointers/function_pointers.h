@@ -3,6 +3,6 @@
 
 void print_name(char *name, void (*f)(char *));
 
-int putchar(char c);
+int _putchar(char c);
 
 #endif /* FP_H */
