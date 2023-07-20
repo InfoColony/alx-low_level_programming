@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
 
 /**
@@ -25,12 +26,12 @@ int main(int cnt, char *arg[])
 		printf("Error\n");
 		exit(99);
 	}
-	res = get_op_func(arg[2]);
-	if (res == NULL)
+	if ((agr[2][0] == '/' || arg[2][0] == '%') && n2 == 0)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(98);
 	}
+	res = get_op_func(arg[2]);
 	printf("%d\n", res(n1, n2));
 	return (0);
 }
