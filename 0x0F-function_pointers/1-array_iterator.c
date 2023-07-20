@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iteration - A function that sprints all element of a array
+ * array_iterator - A function that sprints all element of a array
  * @array: An input to the function
  * @size: An input to the function
  * @action: An input to the function
