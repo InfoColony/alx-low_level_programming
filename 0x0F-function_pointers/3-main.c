@@ -23,7 +23,7 @@ int main(int cnt, char *arg[])
 	if (get_op_func(arg[2]) == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	res = get_op_func(arg[2]);
 	if (res == NULL)
