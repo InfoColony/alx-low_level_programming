@@ -26,7 +26,7 @@ int main(int cnt, char *arg[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((agr[2][0] == '/' || arg[2][0] == '%') && n2 == 0)
+	if ((arg[2][0] == '/' || arg[2][0] == '%') && n2 == 0)
 	{
 		printf("Error\n");
 		exit(98);
