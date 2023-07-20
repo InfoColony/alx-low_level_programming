@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * int_intex - A function that returns the index of a matched number
+ * int_index - A function that returns the index of a matched number
  * @array: An input to the function
  * @size: The size of an array
  * @cmp: A pointer to a function
@@ -16,7 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		return (-1);
 	for (; i < size; i++)
 	{
-		if (cmp(array[i] == 1)
+		if (cmp(array[i]) == 1)
 			return (i);
 	}
 	return (-1);
