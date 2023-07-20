@@ -18,12 +18,12 @@ int main(int cnt, char *arg[])
 
 	if (cnt != 4)
 	{
-		printf("Error from cnt\n");
+		printf("Error\n");
 		exit(98);
 	}
 	if (get_op_func(arg[2]) == NULL)
 	{
-		printf("Error from get_op\n");
+		printf("Error\n")
 		exit(98);
 	}
 	if ((strcmp(arg[2], "/") == 0 || strcmp(arg[2], "%") == 0) && n2 == 0)
