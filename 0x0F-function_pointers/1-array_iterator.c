@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <stdio.h>
+#include <stddef.h>
 
 /**
  * array_iteration - A function that sprints all element of a array
