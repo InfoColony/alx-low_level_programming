@@ -23,7 +23,7 @@ int main(int cnt, char *arg[])
 	}
 	if (get_op_func(arg[2]) == NULL)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		exit(98);
 	}
 	if ((strcmp(arg[2], "/") == 0 || strcmp(arg[2], "%") == 0) && n2 == 0)
